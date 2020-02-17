@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>심기현 페이지</title>
+	<style type="text/css">
+		body{
+			background-color: snow;
+			margin: 8px 0px 8px 0px;
+		}
+
+		#title{
+			font-size: 50px;
+			font-family: "courier new"
+		}
+
+		#menu{
+			border-bottom: 2px solid black;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			text-align: center;
+			margin-top: 40px;
+			padding-bottom: 5px;}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		#firstpage{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			margin: 200px 400px 200px 400px;
+			border: 10px ;
+			border-style: double;
+			padding: 60px;
+			float; top;
+			background-color: lightyellow;
+		}
+
+		#kihyuns{
+		 	border-radius: 20%;
+		 	margin-left: 20px;
+		}
+
+		#info{
+			margin-top: 10px;
+			color: inherit;
+		}
+
+		#secondpage {
+			border: 10px black solid;
+			border-style: double;
+			margin: 200px 400px 200px 400px;
+			display: grid;
+			grid-template-rows: 3fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
+			background-color: lightyellow;
+		}
+
+		#secondpage span{
+			text-align: center;
+			font-size: 30px;
+			padding: 5px
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1 id="title" style="text-align: center;">😎 Welcome to My Page 😎</h1>
+		<div id="menu">
+			<div></div>
+			<div><a href="#firstpage">기본정보</a></div>
+			<div><a href="#secondpage">취미활동</a></div>
+			<div><a href="">좋아하는 것</a></div>
+			<div><a href="">위코드에서 하고싶은 것</a></div>
+			<div></div>
+		</div>
+	</header>
+	<main>
+		<div id="firstpage">
+			<img id="kihyuns" src="kihyuns.jpeg" width="100px">
+			<div id="info">
+				<div>이름: 심기현</div>
+				<div>성별: 남자</div>
+				<div>생일: 1989. 4. 17</div>
+				<div>혈액형: O RH+</div>
+				<div>사는곳: 서울 양천구 목동</div>
+				<div>연락처: 010-7337-8738</div>
+			</div>
+		</div>
+		<div style="border: 2px dotted	black;"></div>
+		<div id="secondpage">
+			<span><img src="icons/film.png" width="180px"></span>
+			<span><img src="icons/golf.png" width="180px"></span>
+			<span><img src="icons/travel.png" width="180px"></span>
+			<span>영화</span>
+			<span>골프</span>
+			<span>여행</span>
+		</div>
+		<div style="border: 2px dotted	black;"></div>
+		<div id="thirdpage">
+			<div></div>
+			<div></div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+</html>
