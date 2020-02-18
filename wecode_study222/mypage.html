@@ -29,12 +29,11 @@
 
 		#firstpage{
 			display: grid;
-			grid-template-columns: 1fr 2fr;
+			grid-template-columns: 1fr 2fr 1fr;
 			margin: 200px 400px 200px 400px;
 			border: 10px ;
 			border-style: double;
 			padding: 60px;
-			float; top;
 			background-color: lightyellow;
 		}
 
@@ -65,6 +64,39 @@
 
 		}
 
+		#thirdpage{
+			border: 10px black solid;
+			border-style: double;
+			margin: 200px 400px 200px 400px;
+			padding: 40px 10px 40px 10px;
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			background-color: lightyellow;
+		}
+
+		#thirdpage #wine{
+			text-align: center;			
+		}
+
+		footer {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			padding-top: 10px;
+			border-top: 1px dotted black;
+		}
+
+		footer #instalogo{
+			text-align: center;
+			padding-top: 5px;
+
+		}
+		#go-to-top{
+			padding-right: 30px;
+			position: fixed;
+			bottom: 3px;
+			right: 3px;
+		}
+
 
 	</style>
 </head>
@@ -75,7 +107,7 @@
 			<div></div>
 			<div><a href="#firstpage">기본정보</a></div>
 			<div><a href="#secondpage">취미활동</a></div>
-			<div><a href="">좋아하는 것</a></div>
+			<div><a href="#thirdpage">좋아하는 것</a></div>
 			<div><a href="">위코드에서 하고싶은 것</a></div>
 			<div></div>
 		</div>
@@ -92,7 +124,7 @@
 				<div>연락처: 010-7337-8738</div>
 			</div>
 		</div>
-		<div style="border: 2px dotted	black;"></div>
+		<div style="border: 1px dotted	black;"></div>
 		<div id="secondpage">
 			<span><img src="icons/film.png" width="180px"></span>
 			<span><img src="icons/golf.png" width="180px"></span>
@@ -101,12 +133,25 @@
 			<span>골프</span>
 			<span>여행</span>
 		</div>
-		<div style="border: 2px dotted	black;"></div>
+		<div style="border: 1px dotted	black;"></div>
 		<div id="thirdpage">
-			<div></div>
-			<div></div>
+			<div id="wine">
+				<img src="KakaoTalk_Photo_2020-02-17-16-59-27.jpeg" alt="wine" width="130px">
+			</div>
+			<div id="favorite">평소에 많이 먹는 편은 아니지만, 맛집 탐방하는 것을 좋아한다. 또 음식 사진을 남기는 것도 좋아한다.
+			SNS로 인스타그램을 하기는 하지만 딱히 게시물을 자주 올리는 편은 아니지만, 맛집에 가면 꼭 사진을 남기려고 한다.
+			나중에 혼자 사진첩에서 음식 사진만 보는 것만으로도 뭔가 스트레스도 해소되고 그날의 좋았던 기억을 떠올릴 수 있기 때문이다.
+			</div>
 		</div>
 	</main>
-	<footer></footer>
+	<footer>
+		<div></div>
+		<div id="instalogo">
+			<a href="https://www.instagram.com/sm.k.hn/" target="_black"><img src="icons/instalogo.png" width="60px"></a>
+		</div>
+		<div id="go-to-top">
+			<a href="#title"><img src="icons/topbutton.png" width="60px" align="right"></a>
+		</div>
+	</footer>
 </body>
 </html>
